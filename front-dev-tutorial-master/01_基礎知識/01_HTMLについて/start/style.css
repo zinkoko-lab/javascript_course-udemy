@@ -1,0 +1,24 @@
+span {
+  display: inline-block;
+  margin: 0 auto;
+  width: 100px;
+  height: 150px;
+  background-color: aqua;
+  margin-bottom: 10px;
+}
+
+.cls {
+  background-color: grey;
+}
+
+.cls3 {
+  background-color: yellow;
+}
+
+#first {
+  background-color: blanchedalmond;
+}
+
+body {
+  text-align: right;
+}

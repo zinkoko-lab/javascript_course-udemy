@@ -1,0 +1,22 @@
+.parent {
+  color: blue;
+  // dainari 記号があるとき -> 一つ下の階層の要素
+  & > .element {
+    color: purple;
+
+    // 半角スペースだけ -> その親要素の中の要素全てが該当する
+    & .element {
+      color: darkgreen;
+    }
+
+    // 半角スペースなし -> 同じ親要素の次のclass名 -> class="element second-child"
+    &.second-child {
+      color: black;
+    }
+  }
+}
+
+// 詳細度が低い -> 反映されない
+.element {
+  color: red;
+}
