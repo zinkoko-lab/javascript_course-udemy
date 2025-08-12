@@ -17,10 +17,9 @@ $cBlack: black;
 
   &.float {
     &:hover {
-      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      box-shadow: 5px 5px 10px $cBlack;
     }
   }
-
   // &:hover {
   //   background-color: $cBlack;
   //   color: $cWhite;
