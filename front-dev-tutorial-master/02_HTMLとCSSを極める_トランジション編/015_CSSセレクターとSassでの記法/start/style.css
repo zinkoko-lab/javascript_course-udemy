@@ -7,6 +7,9 @@
 .parent > .element .element {
   color: darkgreen;
 }
+.parent > .element .element .himago {
+  color: red;
+}
 .parent > .element.second-child {
   color: black;
 }

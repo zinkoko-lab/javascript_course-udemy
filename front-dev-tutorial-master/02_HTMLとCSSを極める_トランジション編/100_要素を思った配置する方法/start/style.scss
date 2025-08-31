@@ -6,15 +6,29 @@
 
 .child {
   background-color: orange;
-  width: 100px;
-  height: 100px;
+  // width: 300px;
+  height: 300px;
   font-weight: 600;
+  // flex-grow: 1;
+  flex-basis: 300px;
 }
+
+// .child.v1 {
+//   flex-grow: 1;
+// flex-basis: 300px;
+// }
+
 .child.v2 {
+  // width: 200px;
+  // height: 200px;
   background-color: palevioletred;
+  // flex-grow: 2;
 }
 .child.v3 {
+  // width: 100px;
+  // height: 100px;
   background-color: rebeccapurple;
+  // flex-grow: 3;
 }
 
 /**
@@ -22,17 +36,18 @@
  */
 /* インライン要素に対して */
 // .parent {
-//   text-align: left;
+//   text-align: center;
+//   // letter-spacing: -6px;
 // }
 // .child {
-//     display: inline-block;
+//   display: inline-block;
 // }
 
 /* ブロック要素を中央揃え */
 // .parent {
 // }
 // .child {
-//     margin: 0 auto;
+//   margin: 0 auto;
 // }
 
 /**
@@ -48,9 +63,16 @@
 //   transform: translate(-50%, -50%);
 // }
 
-// .parent {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-start;
-//   align-items: flex-end;
-// }
+.parent {
+  display: flex;
+  // flex-direction: column;
+  justify-content: flex-start;
+  // justify-content: space-around;
+  // justify-content: end;
+  // justify-content: space-around;
+  align-items: center;
+  // align-items: flex-end;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 10px;
+}

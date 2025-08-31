@@ -1,27 +1,29 @@
 $cWhite: white;
 $cBlack: black;
-$cBody: aliceblue;
 
-body {
-  background-color: $cBody;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #container {
+  // background-color: aquamarine;
   text-align: center;
+  margin-top: 50px;
 
-  .btn {
+  button.btn {
     background-color: $cWhite;
-    border: 1px solid $cBlack;
-    padding: 10px 40px;
-    font-weight: 600;
     color: $cBlack;
-    margin-top: 50px;
+    font-weight: 600;
+    padding: 10px 40px;
+    border: 2px solid $cBlack;
+    cursor: pointer;
     transition: all 0.5s;
 
     &:hover {
-      background-color: $cBlack;
       color: $cWhite;
-      cursor: pointer;
+      background-color: $cBlack;
     }
   }
 }

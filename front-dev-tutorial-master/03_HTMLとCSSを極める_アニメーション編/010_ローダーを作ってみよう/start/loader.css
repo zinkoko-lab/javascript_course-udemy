@@ -1,7 +1,8 @@
-.three-dot-spinner {
+div.three-dot-spinner {
+  margin-top: 300px;
   text-align: center;
 }
-.three-dot-spinner div {
+div.three-dot-spinner div {
   display: inline-block;
   width: 18px;
   height: 18px;
@@ -9,10 +10,10 @@
   border-radius: 50%;
   animation: sk-bouncedelay 1.4s infinite;
 }
-.three-dot-spinner div:nth-child(1) {
+div.three-dot-spinner div.bounce1 {
   animation-delay: -0.32s;
 }
-.three-dot-spinner div:nth-child(2) {
+div.three-dot-spinner div.bounce2 {
   animation-delay: -0.16s;
 }
 

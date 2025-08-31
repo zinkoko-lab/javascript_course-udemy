@@ -1,21 +1,23 @@
-body {
-  background-color: aliceblue;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #container {
   text-align: center;
-}
-#container .btn {
-  background-color: white;
-  border: 1px solid black;
-  padding: 10px 40px;
-  font-weight: 600;
-  color: black;
   margin-top: 50px;
+}
+#container button.btn {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  padding: 10px 40px;
+  border: 2px solid black;
+  cursor: pointer;
   transition: all 0.5s;
 }
-#container .btn:hover {
-  background-color: black;
+#container button.btn:hover {
   color: white;
-  cursor: pointer;
+  background-color: black;
 }/*# sourceMappingURL=style.css.map */

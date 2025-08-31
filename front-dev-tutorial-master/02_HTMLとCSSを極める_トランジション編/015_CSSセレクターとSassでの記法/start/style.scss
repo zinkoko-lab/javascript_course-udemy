@@ -7,6 +7,10 @@
     // 半角スペースだけ -> その親要素の中の要素全てが該当する(すべての階層が該当する)
     & .element {
       color: darkgreen;
+
+      .himago {
+        color: red;
+      }
     }
 
     // 半角スペースなし -> 同じ親要素の次のclass名 -> class="element second-child"

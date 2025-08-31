@@ -7,9 +7,9 @@
 
 .child {
   background-color: orange;
-  width: 100px;
-  height: 100px;
+  height: 300px;
   font-weight: 600;
+  flex-basis: 300px;
 }
 
 .child.v2 {
@@ -27,4 +27,12 @@
 /* ブロック要素を中央揃え */
 /**
  * 上下方向のレイアウト
- *//*# sourceMappingURL=style.css.map */
+ */
+.parent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 10px;
+}/*# sourceMappingURL=style.css.map */

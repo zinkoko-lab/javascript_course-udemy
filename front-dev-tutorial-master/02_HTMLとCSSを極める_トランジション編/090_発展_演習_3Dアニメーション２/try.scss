@@ -6,6 +6,7 @@ $cBlack: black;
 }
 .try {
   .btn {
+    // background-color: yellow;
     position: relative;
     display: inline-block;
     transform-style: preserve-3d;
@@ -17,6 +18,40 @@ $cBlack: black;
 
     &.cubic {
       /** スタイルをここに追加。*/
+      & span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        line-height: 48px;
+        border: 1px solid $cBlack;
+        text-align: center;
+        transition: all 0.3s;
+        transform-origin: center center -25px;
+      }
+
+      & .hovering {
+        background-color: $cBlack;
+        color: $cWhite;
+        transform: rotateX(90deg);
+      }
+
+      & .default {
+        background-color: $cWhite;
+        color: $cBlack;
+        transform: rotateX(0);
+      }
+
+      &:hover {
+        .hovering {
+          transform: rotateX(0);
+        }
+        .default {
+          transform: rotateX(-90deg);
+        }
+      }
     }
   }
 }

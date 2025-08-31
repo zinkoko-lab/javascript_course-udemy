@@ -8,6 +8,8 @@ body {
   height: 100px;
   background-color: black;
   animation: sk-bouncedelay 1.4s ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
 
 .paused {
